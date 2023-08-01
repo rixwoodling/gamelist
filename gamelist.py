@@ -48,6 +48,8 @@ def csv2xml():
                     output.write( '</game>'+'\n' )
                     output.write( '\n' )
                     print( row['name'] )
+                    
+            output.write( '</gameList>' +'\n'+'\n' )         
             output.close()
     else:
         help()
