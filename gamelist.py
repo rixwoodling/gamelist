@@ -26,30 +26,32 @@ def csv2xml():
                     name = row['name']
                     desc = row['desc']
                     path = './'+ row['file']
-                    image = './'+ row['file'].replace( '.zip','.png' )
-                    video = './'+ row['file'].replace( '.zip','.mp4' )
+                    image = './'+ row['file'].replace( '.nes','.png' )
+                    video = './'+ row['file'].replace( '.nes','.mp4' )
                     genre = row['genre']
                     releasedate = row['releasedate'].replace( '-','' )
                     developer = row['developer']
                     publisher = row['publisher']
                     players = row['players']
 
-                    output.write( '<game>'+'\n' )
-                    output.write( '<name>'+ name +'</name>'+'\n' )
-                    output.write( '<desc>'+ desc + '</desc>'+'\n' )
-                    output.write( '<path>'+ path +'</path>'+'\n' )
-                    output.write( '<image>'+ image + '</image>'+'\n' )
-                    output.write( '<video>'+ video + '</video>'+'\n' )
-                    output.write( '<genre>'+ genre + '</genre>'+'\n' )
-                    output.write( '<releasedate>'+ releasedate + '</releasedate>'+'\n' )
-                    output.write( '<developer>'+ developer + '</developer>'+'\n' )
-                    output.write( '<publisher>'+ publisher + '</publisher>'+'\n' )
-                    output.write( '<players>'+ players + '</players>'+'\n' )
-                    output.write( '</game>'+'\n' )
-                    output.write( '\n' )
-                    print( row['name'] )
-                    
-            output.write( '</gameList>' +'\n'+'\n' )         
+                    if os.path.isfile( csv_dir +'/'+ path ):
+                        output.write( '<game>'+'\n' )
+                        output.write( '<name>'+ name +'</name>'+'\n' )
+                        output.write( '<desc>'+ desc + '</desc>'+'\n' )
+                        output.write( '<path>'+ path +'</path>'+'\n' )
+                        output.write( '<image>'+ image + '</image>'+'\n' )
+                        output.write( '<video>'+ video + '</video>'+'\n' )
+                        output.write( '<genre>'+ genre + '</genre>'+'\n' )
+                        output.write( '<releasedate>'+ releasedate + '</releasedate>'+'\n' )
+                        output.write( '<developer>'+ developer + '</developer>'+'\n' )
+                        output.write( '<publisher>'+ publisher + '</publisher>'+'\n' )
+                        output.write( '<players>'+ players + '</players>'+'\n' )
+                        output.write( '</game>'+'\n' )
+                        output.write( '\n' )
+                        print( row['name'] )
+                    else:
+                        pass
+            output.write( '</gameList>' +'\n'+'\n' )
             output.close()
     else:
         help()
