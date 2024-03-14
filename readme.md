@@ -1,7 +1,3 @@
-Sure thing! Here's a README to go along with the script you've shared. This README explains what the script does, how to set it up, and how to use it.
-
----
-
 # EmulationStation Game List Generator
 
 This Python script automates the creation of a `gamelist.xml` file for each ROM in your collection, making it easier to manage your games in EmulationStation. By reading a CSV file containing details about your games, the script generates an XML file that EmulationStation can use to display game information.
