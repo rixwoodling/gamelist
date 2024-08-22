@@ -1,4 +1,4 @@
-console,name,file,developer,publisher,releasedate,genre,players,desc
+#console,name,file,developer,publisher,releasedate,genre,players,desc
 NES,1942,1942.nes,Capcom,Capcom,1985-12-11,Shoot 'em up,2,Pilot a World War II fighter plane and shoot down enemy aircraft in this classic aerial combat game.
 NES,1943: The Battle of Midway,1943_the_battle_of_midway.nes,Capcom,Capcom,1988-06-13,Shoot 'em up,2,Engage in intense dogfights as you lead your squadron against enemy forces in the Pacific theater.
 NES,10-Yard Fight,10_yard_fight.nes,Irem,Nintendo,1985-10-18,Sports,2,Play a simplified version of American football where you score touchdowns by advancing the ball down the field.
@@ -517,6 +517,9 @@ NES,Xexyz,xexyz.nes,Atlus,Hudson Soft,1990-04-01,Action-platformer,1,Explore fut
 NES,Yoshi,yoshi.nes,Game Freak,Nintendo,1992-06-01,Puzzle,2,Help Mario match and stack falling pieces to clear levels in this fast-paced puzzle game featuring Yoshi.
 NES,Yoshi's Cookie,yoshis_cookie.nes,Tose,Nintendo,1993-04-01,Puzzle,2,Match and clear rows of cookies in this tile-matching puzzle game starring Yoshi.
 NES,Yo! Noid,yo_noid.nes,Now Production,Capcom,1990-11-01,Action-platformer,1,Play as the Noid and save New York City from an evil duplicate in this action-platformer based on the Domino's Pizza mascot.
+NES,Zanac,zanac.nes,Compile,Fic,1987-10-01,Shoot 'em up,1,Pilot a spaceship and battle through waves of enemies in this fast-paced vertical-scrolling shooter.
+NES,Zelda II: The Adventure of Link,zelda_ii_the_adventure_of_link.nes,Nintendo,Nintendo,1988-12-01,Action RPG,1,Guide Link on a quest to save Princess Zelda by battling enemies and solving puzzles in this unique side-scrolling adventure.
+NES,Zombie Nation,zombie_nation.nes,Kaze,Melbourne House,1991-12-01,Shoot 'em up,1,Control a disembodied samurai head as it flies through levels destroying enemies and rescuing people in this bizarre shoot 'em up.
 .
 
 
